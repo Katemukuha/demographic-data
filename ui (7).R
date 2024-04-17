@@ -31,7 +31,7 @@ shinyUI(
       column(3, 
              wellPanel(
                p("Select a categorical variable to view bar chart on the right. Use the check box to view a stacked bar chart to combine the income levels into one graph."),
-               radioButtons(inputId = "categorical variable", label = "Categorical", choices = c("education", "workclass", "sex"), selected = "education"),    # add radio buttons for categorical variables
+               radioButtons(inputId = "categorical_variable", label = "Categorical", choices = c("education", "workclass", "sex"), selected = "education"),    # add radio buttons for categorical variables
                             checkboxInput(inputId = "is_stacked", label = "Stack bars", value = FALSE)     # add check box input for stacked bar chart option
                )
              ),
